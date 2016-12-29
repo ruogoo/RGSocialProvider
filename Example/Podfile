@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RGSocialProvider_Example' do
+  pod 'RGSocialProvider', :path => '../'
+
+  target 'RGSocialProvider_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

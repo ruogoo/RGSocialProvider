@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RGSocialProvider'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RGSocialProvider.'
+  s.summary          = 'A provider for social authentications.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,24 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+ A provider for social authentications.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/RGSocialProvider'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/ruogoo/RGSocialProvider'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'HyanCat' => 'hyancat@live.cn' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/RGSocialProvider.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/ruogoo/RGSocialProvider.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'RGSocialProvider/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'RGSocialProvider' => ['RGSocialProvider/Assets/*.png']
-  # }
+  s.source_files = 'RGSocialProvider/**/*.{h,m}'
+  s.resource     = 'RGSocialProvider/Libs/WeiboSDK-3.1.4/WeiboSDK.bundle'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'RGSocialProvider/Classes/**/*.h'
+  s.private_header_files = 'RGSocialProvider/Libs/**/*.h'
+  s.vendored_libraries = 'RGSocialProvider/Libs/WeiboSDK-3.1.4/libWeiboSDK.a'
+  s.vendored_frameworks = 'RGSocialProvider/Libs/TencentSDK-3.1.3/TencentOpenAPI.framework'
+  s.frameworks = 'CoreTelephony', 'SystemConfiguration', 'ImageIO', 'CoreText', 'QuartzCore', 'Security', 'CoreGraphics'
+  s.libraries = 'c++', 'z', 'stdc++', 'sqlite3', 'iconv'
+
 end

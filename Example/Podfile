@@ -1,11 +1,10 @@
-use_frameworks!
+#use_frameworks!
+platform :ios, '8.0'
 
 target 'RGSocialProvider_Example' do
   pod 'RGSocialProvider', :path => '../'
 
   target 'RGSocialProvider_Tests' do
     inherit! :search_paths
-
-    
   end
 end

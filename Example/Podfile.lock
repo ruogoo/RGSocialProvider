@@ -1,0 +1,16 @@
+PODS:
+  - RGSocialProvider (0.1.0)
+
+DEPENDENCIES:
+  - RGSocialProvider (from `../`)
+
+EXTERNAL SOURCES:
+  RGSocialProvider:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RGSocialProvider: d5b9b296babfa880bf671512ff31b14e139566fe
+
+PODFILE CHECKSUM: f90b360ccc637f5d6753af6f37a85552753bcdc6
+
+COCOAPODS: 1.1.1

@@ -7,8 +7,12 @@
 //
 
 #import "RGViewController.h"
+@import RGSocialProvider;
 
 @interface RGViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *qqButton;
+@property (weak, nonatomic) IBOutlet UIButton *wechatButton;
+@property (weak, nonatomic) IBOutlet UIButton *weiboButton;
 
 @end
 
@@ -17,13 +21,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)qqButtonTouched:(id)sender {
+    [[RGSocialProvider with:kRGSocialTypeQQ] authenticateCompleted:^(NSDictionary *result, NSError *error) {
+        NSLog(@"login QQ.");
+    }];
+}
+
+- (IBAction)wechatButtonTouched:(id)sender {
+    [[RGSocialProvider with:kRGSocialTypeWeChat] authenticateCompleted:^(NSDictionary *result, NSError *error) {
+        NSLog(@"login Wechat.");
+    }];
+}
+
+- (IBAction)weiboButtonTouched:(id)sender {
+    [[RGSocialProvider with:kRGSocialTypeWeibo] authenticateCompleted:^(NSDictionary *result, NSError *error) {
+        NSLog(@"login Weibo.");
+    }];
 }
 
 @end

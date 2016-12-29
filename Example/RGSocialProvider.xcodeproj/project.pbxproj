@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		56AF516EA076B6DA80C4F34F /* libPods-RGSocialProvider_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A12FA4C43AB781A9F528C68E /* libPods-RGSocialProvider_Example.a */; };
+		03D4F196905CB93B3B67A84B /* Pods_RGSocialProvider_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD917EB8D87FE5BCC12101A0 /* Pods_RGSocialProvider_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,7 +21,13 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		818CC54474D90724639D2AF2 /* libPods-RGSocialProvider_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 087D644CF8F051084386CF37 /* libPods-RGSocialProvider_Tests.a */; };
+		663772981E14EDDE0038CE5B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663772971E14EDDE0038CE5B /* ImageIO.framework */; };
+		6637729A1E14EDF60038CE5B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663772991E14EDF60038CE5B /* Security.framework */; };
+		6637729C1E14EE3D0038CE5B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6637729B1E14EE3D0038CE5B /* SystemConfiguration.framework */; };
+		6637729E1E14EE490038CE5B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6637729D1E14EE490038CE5B /* CoreTelephony.framework */; };
+		663772A01E14EE500038CE5B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6637729F1E14EE500038CE5B /* QuartzCore.framework */; };
+		663772A21E14EE550038CE5B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663772A11E14EE550038CE5B /* CoreText.framework */; };
+		6CBAD38CD0BE51D420FDCA84 /* Pods_RGSocialProvider_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00524D99A06F9939B5B0DDA /* Pods_RGSocialProvider_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		087D644CF8F051084386CF37 /* libPods-RGSocialProvider_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RGSocialProvider_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1269A72EDA57C758E5ED3B5F /* Pods-RGSocialProvider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGSocialProvider_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RGSocialProvider_Example/Pods-RGSocialProvider_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		14553D745BD7E5127C1B6646 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* RGSocialProvider_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGSocialProvider_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,12 +63,19 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		663772971E14EDDE0038CE5B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		663772991E14EDF60038CE5B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6637729B1E14EE3D0038CE5B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6637729D1E14EE490038CE5B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		6637729F1E14EE500038CE5B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		663772A11E14EE550038CE5B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		78F3787BBA4905091E2245DD /* Pods-RGSocialProvider_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGSocialProvider_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGSocialProvider_Tests/Pods-RGSocialProvider_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		A12FA4C43AB781A9F528C68E /* libPods-RGSocialProvider_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RGSocialProvider_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FDD4454B239402E8EEB436 /* RGSocialProvider.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RGSocialProvider.podspec; path = ../RGSocialProvider.podspec; sourceTree = "<group>"; };
+		CD917EB8D87FE5BCC12101A0 /* Pods_RGSocialProvider_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGSocialProvider_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF75C083CD5DFF8397D001FF /* Pods-RGSocialProvider_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGSocialProvider_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RGSocialProvider_Tests/Pods-RGSocialProvider_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EBC4FAF01BC0EE70696C7F87 /* Pods-RGSocialProvider_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGSocialProvider_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGSocialProvider_Example/Pods-RGSocialProvider_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F00524D99A06F9939B5B0DDA /* Pods_RGSocialProvider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGSocialProvider_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1DF66054ABB24E726EEE7B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,10 +84,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663772A21E14EE550038CE5B /* CoreText.framework in Frameworks */,
+				663772A01E14EE500038CE5B /* QuartzCore.framework in Frameworks */,
+				6637729E1E14EE490038CE5B /* CoreTelephony.framework in Frameworks */,
+				6637729C1E14EE3D0038CE5B /* SystemConfiguration.framework in Frameworks */,
+				6637729A1E14EDF60038CE5B /* Security.framework in Frameworks */,
+				663772981E14EDDE0038CE5B /* ImageIO.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				56AF516EA076B6DA80C4F34F /* libPods-RGSocialProvider_Example.a in Frameworks */,
+				6CBAD38CD0BE51D420FDCA84 /* Pods_RGSocialProvider_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +104,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				818CC54474D90724639D2AF2 /* libPods-RGSocialProvider_Tests.a in Frameworks */,
+				03D4F196905CB93B3B67A84B /* Pods_RGSocialProvider_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,12 +135,18 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				663772A11E14EE550038CE5B /* CoreText.framework */,
+				6637729F1E14EE500038CE5B /* QuartzCore.framework */,
+				6637729D1E14EE490038CE5B /* CoreTelephony.framework */,
+				6637729B1E14EE3D0038CE5B /* SystemConfiguration.framework */,
+				663772991E14EDF60038CE5B /* Security.framework */,
+				663772971E14EDDE0038CE5B /* ImageIO.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				A12FA4C43AB781A9F528C68E /* libPods-RGSocialProvider_Example.a */,
-				087D644CF8F051084386CF37 /* libPods-RGSocialProvider_Tests.a */,
+				F00524D99A06F9939B5B0DDA /* Pods_RGSocialProvider_Example.framework */,
+				CD917EB8D87FE5BCC12101A0 /* Pods_RGSocialProvider_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -522,9 +546,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RGSocialProvider/RGSocialProvider-Prefix.pch";
 				INFOPLIST_FILE = "RGSocialProvider/RGSocialProvider-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"RGSocialProvider\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -542,8 +573,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RGSocialProvider/RGSocialProvider-Prefix.pch";
 				INFOPLIST_FILE = "RGSocialProvider/RGSocialProvider-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"RGSocialProvider\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

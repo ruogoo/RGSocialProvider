@@ -33,9 +33,9 @@ Pod::Spec.new do |s|
 
   s.public_header_files = 'RGSocialProvider/Classes/**/*.h'
   s.private_header_files = 'RGSocialProvider/Libs/**/*.h'
-  s.vendored_libraries = 'RGSocialProvider/Libs/WeiboSDK-3.1.4/libWeiboSDK.a'
+  s.vendored_libraries = 'RGSocialProvider/Libs/WeiboSDK-3.1.4/libWeiboSDK.a', 'RGSocialProvider/Libs/WeChatSDK-1.7.5/libWeChatSDK.a'
   s.vendored_frameworks = 'RGSocialProvider/Libs/TencentSDK-3.1.3/TencentOpenAPI.framework'
-  s.frameworks = 'CoreTelephony', 'SystemConfiguration', 'ImageIO', 'CoreText', 'QuartzCore', 'Security', 'CoreGraphics'
+  s.frameworks = 'CoreTelephony', 'SystemConfiguration', 'ImageIO', 'CoreText', 'QuartzCore', 'Security', 'CoreGraphics', 'UIKit', 'Foundation'
   s.libraries = 'c++', 'z', 'stdc++', 'sqlite3', 'iconv'
 
 end

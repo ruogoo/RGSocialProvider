@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RGSocialProvider: eb996c4c7c138e235a980dd2c66c173a7d9c730a
+  RGSocialProvider: 277e24067fefc37c687f8a242e926b3d392cfa34
 
 PODFILE CHECKSUM: 321dfcfeef1eaa20f111ead84c0285fe957d9686
 

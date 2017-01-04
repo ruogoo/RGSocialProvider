@@ -27,6 +27,7 @@
 		6637729E1E14EE490038CE5B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6637729D1E14EE490038CE5B /* CoreTelephony.framework */; };
 		663772A01E14EE500038CE5B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6637729F1E14EE500038CE5B /* QuartzCore.framework */; };
 		663772A21E14EE550038CE5B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663772A11E14EE550038CE5B /* CoreText.framework */; };
+		6C32505F1E1C911800A2507A /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C32505E1E1C911800A2507A /* WeiboSDK.bundle */; };
 		6CBAD38CD0BE51D420FDCA84 /* Pods_RGSocialProvider_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00524D99A06F9939B5B0DDA /* Pods_RGSocialProvider_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		6637729D1E14EE490038CE5B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		6637729F1E14EE500038CE5B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		663772A11E14EE550038CE5B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		6C32505E1E1C911800A2507A /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
 		78F3787BBA4905091E2245DD /* Pods-RGSocialProvider_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGSocialProvider_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGSocialProvider_Tests/Pods-RGSocialProvider_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B1FDD4454B239402E8EEB436 /* RGSocialProvider.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RGSocialProvider.podspec; path = ../RGSocialProvider.podspec; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		6003F593195388D20070C39A /* Example for RGSocialProvider */ = {
 			isa = PBXGroup;
 			children = (
+				6C32505E1E1C911800A2507A /* WeiboSDK.bundle */,
 				6003F59C195388D20070C39A /* RGAppDelegate.h */,
 				6003F59D195388D20070C39A /* RGAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -268,7 +271,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RG;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = HyanCat;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
@@ -307,6 +310,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				6C32505F1E1C911800A2507A /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

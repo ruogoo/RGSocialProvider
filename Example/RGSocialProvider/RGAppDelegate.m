@@ -9,10 +9,10 @@
 #import "RGAppDelegate.h"
 @import RGSocialProvider;
 
-#define SOCIAL_WEIBO_SDK_KEY @"89821448"
+#define SOCIAL_WEIBO_SDK_KEY @"123"
 #define SOCIAL_WEIBO_SDK_REDIRECT @""
 #define SOCIAL_QQ_SDK_KEY @"123"
-#define SOCIAL_WECHAT_SDK_KEY @"123"
+#define SOCIAL_WECHAT_SDK_KEY @"wx123"
 
 @implementation RGAppDelegate
 

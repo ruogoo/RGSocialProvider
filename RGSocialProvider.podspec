@@ -38,4 +38,5 @@ Pod::Spec.new do |s|
   s.frameworks = 'CoreTelephony', 'SystemConfiguration', 'ImageIO', 'CoreText', 'QuartzCore', 'Security', 'CoreGraphics', 'UIKit', 'Foundation', 'CFNetwork'
   s.libraries = 'c++', 'z', 'stdc++', 'sqlite3', 'iconv'
 
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -all_load' }
 end

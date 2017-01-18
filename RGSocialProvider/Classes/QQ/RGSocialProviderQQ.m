@@ -71,12 +71,14 @@ NSString *const kRGSocialOptionPermissions = @"RGSocialOptionPermissionsKey";
 
 - (void)tencentDidNotLogin:(BOOL)cancelled
 {
-	
+	RGSocialCompledBlock cancelledBlock = self.completedBlock;
+    self.completedBlock = nil;
+    cancelledBlock(nil, nil);
 }
 
 - (void)tencentDidNotNetWork
 {
-	
+
 }
 
 - (void)getUserInfoResponse:(APIResponse *)response

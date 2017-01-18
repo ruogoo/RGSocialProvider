@@ -68,9 +68,19 @@ NSString *const kRGSocialTypeWeChat = @"RGSocialType_WeChat";
 
 - (void)onResp:(BaseResp *)resp
 {
+    RGSocialCompledBlock doneBlock = self.completedBlock;
+    self.completedBlock = nil;
+
     if ([resp isKindOfClass:[SendAuthResp class]])
     {
         SendAuthResp *response = resp;
+
+        if (WXSuccess == response.errCode) {
+            
+        }
+        else {
+            doneBlock(nil, nil);
+        }
         NSLog(@"code: %@, state: %@, error code: %d", response.code, response.state, response.errCode);
     }
 }

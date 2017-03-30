@@ -76,7 +76,7 @@ NSString *const kWeChatUserInfoURL = @"https://api.weixin.qq.com/sns/userinfo?ac
 
     if ([resp isKindOfClass:[SendAuthResp class]])
     {
-        SendAuthResp *response = resp;
+        SendAuthResp *response = (SendAuthResp *)resp;
 
         if (WXSuccess == response.errCode) {
             [self _requestAccessTokenWithCode:response.code completion:^(NSString *accessToken, NSString *openID) {

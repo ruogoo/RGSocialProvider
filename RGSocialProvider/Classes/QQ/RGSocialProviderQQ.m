@@ -9,10 +9,7 @@
 #import "RGSocialProviderQQ.h"
 #import "RGSocialProvider.h"
 #import "RGSocialUser.h"
-#import <TencentOpenAPI/sdkdef.h>
-#import <TencentOpenAPI/TencentOAuth.h>
-#import <TencentOpenAPI/QQApiInterface.h>
-//#import <TencentOpenAPI/TencentApiInterface.h>
+#import <TencentOpenAPI/TencentOpenApiUmbrellaHeader.h>
 
 NSString *const kRGSocialTypeQQ = @"RGSocialType_QQ";
 NSString *const kRGSocialOptionPermissions = @"RGSocialOptionPermissionsKey";
@@ -37,7 +34,10 @@ NSString *const kRGSocialOptionPermissions = @"RGSocialOptionPermissionsKey";
 {
 	self.appKey = appKey;
 	
+    [TencentOAuth setIsUserAgreedAuthorization:YES];
+    
 	self.oauth = [[TencentOAuth alloc] initWithAppId:self.appKey andDelegate:self];
+    
 	return YES;
 }
 
@@ -59,7 +59,7 @@ NSString *const kRGSocialOptionPermissions = @"RGSocialOptionPermissionsKey";
 
 - (BOOL)isInstalled
 {
-	return ([TencentOAuth iphoneQQInstalled] && [TencentOAuth iphoneQQSupportSSOLogin]) || ([TencentOAuth iphoneQZoneInstalled] && [TencentOAuth iphoneQZoneSupportSSOLogin]);
+	return [TencentOAuth iphoneQQInstalled];
 }
 
 #pragma mark - Delegate

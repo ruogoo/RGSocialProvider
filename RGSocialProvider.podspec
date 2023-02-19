@@ -29,13 +29,13 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'RGSocialProvider/**/*.{h,m}'
-  s.resource     = 'RGSocialProvider/Libs/WeiboSDK-3.1.4/WeiboSDK.bundle'
+  s.resource     = 'RGSocialProvider/Libs/**/*.bundle'
 
   s.public_header_files = 'RGSocialProvider/Classes/**/*.h'
   s.private_header_files = 'RGSocialProvider/Libs/**/*.h'
-  s.vendored_libraries = 'RGSocialProvider/Libs/WeiboSDK-3.1.4/libWeiboSDK.a', 'RGSocialProvider/Libs/WeChatSDK-1.7.5/libWeChatSDK.a'
-  s.vendored_frameworks = 'RGSocialProvider/Libs/TencentSDK-3.1.3/TencentOpenAPI.framework'
-  s.frameworks = 'CoreTelephony', 'SystemConfiguration', 'ImageIO', 'CoreText', 'QuartzCore', 'Security', 'CoreGraphics', 'UIKit', 'Foundation', 'CFNetwork'
+  s.vendored_libraries = 'RGSocialProvider/Libs/**/*.a'
+  s.vendored_frameworks = 'RGSocialProvider/Libs/**/*.framework'
+  s.frameworks = 'CoreTelephony', 'SystemConfiguration', 'ImageIO', 'CoreText', 'QuartzCore', 'Security', 'CoreGraphics', 'UIKit', 'Foundation', 'CFNetwork', 'WebKit'
   s.libraries = 'c++', 'z', 'stdc++', 'sqlite3', 'iconv'
 
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -all_load' }

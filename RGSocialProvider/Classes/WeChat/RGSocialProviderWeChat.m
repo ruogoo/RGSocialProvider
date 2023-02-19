@@ -34,8 +34,14 @@ NSString *const kWeChatUserInfoURL = @"https://api.weixin.qq.com/sns/userinfo?ac
 - (BOOL)registerAppKey:(NSString *)appKey
 {
     self.appKey = appKey;
+    
+    [WXApi startLogByLevel:WXLogLevelDetail logBlock:^(NSString *log) {
+        NSLog(@"WeChatSDK: %@", log);
+    }];
 
-    return [WXApi registerApp:appKey withDescription:nil];
+    BOOL ret = [WXApi registerApp:appKey universalLink:@"link.ruogoo.cn"];
+    NSLog(@"WeChatSDK register: %@", @(ret));
+    return ret;
 }
 
 - (BOOL)handleOpenUrl:(NSURL *)url
@@ -51,7 +57,9 @@ NSString *const kWeChatUserInfoURL = @"https://api.weixin.qq.com/sns/userinfo?ac
     authReq.scope = @"snsapi_userinfo";
     authReq.state = @"RGSocialProviderWeChat";
     authReq.openID = self.appKey;
-    [WXApi sendAuthReq:authReq viewController:nil delegate:self];
+    [WXApi sendAuthReq:authReq viewController:nil delegate:nil completion:^(BOOL success) {
+        NSLog(@"WeChatSDK req completion: %@", @(success));
+    }];
 }
 
 - (BOOL)isInstalled
@@ -102,7 +110,7 @@ NSString *const kWeChatUserInfoURL = @"https://api.weixin.qq.com/sns/userinfo?ac
         else {
             doneBlock(nil, nil);
         }
-        NSLog(@"code: %@, state: %@, error code: %d", response.code, response.state, response.errCode);
+        NSLog(@"WeChatSDK code: %@, state: %@, error code: %d", response.code, response.state, response.errCode);
     }
 }
 
